@@ -1,0 +1,12 @@
+.idea
+__pycache__
+lib/utils/__pycache__
+venv
+
+*.chromedriver
+*.build
+*.dist
+
+*.exe
+
+*.log
