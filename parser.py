@@ -10,6 +10,7 @@ def parser_url(url: str):
         browser.implicitly_wait(5)
         browser.get(url)
         html = browser.page_source
+        print(type(html))
     except Exception as e:
         print(e)
     finally:
