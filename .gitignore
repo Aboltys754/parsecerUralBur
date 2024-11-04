@@ -3,7 +3,8 @@ __pycache__
 lib/utils/__pycache__
 venv
 
-*.chromedriver
+*chrome-win64
+*chromedriver-win64
 *.build
 *.dist
 
