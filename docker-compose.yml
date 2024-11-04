@@ -1,0 +1,16 @@
+version: '1.0'
+services:
+  selemium:
+    image: "selenium/standalone-chrome"
+    ports:
+      - "7900:7900"
+    environment:
+      - DB_USER=bridge
+      - DB_PASS=admin
+      - DB_HOST=db_app
+    # volumes:
+    #   - init-db-app:/bridge/libs
+  app:
+    image: imageName
+    ports:
+      - "8000:8000"
