@@ -1,15 +1,16 @@
 import urllib.parse
 from fastapi import FastAPI, Response
 import urllib
-from parser import parser_url
+from parcer import parser_url
 
 
 app = FastAPI()
 
 
-
-@app.get("/get_url/") 
-async def root(url: str) :
+# получает url отдает голый html страницы
+@app.get("/url_to_html/") 
+async def root(url: str):
+	print(url)
 	try:
 		original_url = urllib.parse.unquote(url)
 		html = parser_url(original_url)

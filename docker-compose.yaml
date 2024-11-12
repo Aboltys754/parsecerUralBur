@@ -1,0 +1,7 @@
+version: '1.0'
+services:
+  parcer:
+    image: "aboltys754/parcer:0.0.1"
+    ports:
+      - "8000:8000"
+    restart: on-failure

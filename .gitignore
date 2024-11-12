@@ -5,6 +5,8 @@ venv
 
 *chrome-win64
 *chromedriver-win64
+*chrome-linux64
+*chromedriver-linux64
 *.build
 *.dist
 

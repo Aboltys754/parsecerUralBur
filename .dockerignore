@@ -1,0 +1,17 @@
+.dockerignore
+Dockerfile
+.git
+.gitignore
+
+.idea
+__pycache__
+*venv
+
+*chrome-win64
+*chromedriver-win64
+*.build
+*.dist
+*README.md
+*docker-compose.yaml
+
+*.exe
