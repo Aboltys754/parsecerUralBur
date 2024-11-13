@@ -4,8 +4,13 @@ import os
 import pathlib
 
 path_app = os.getcwd()
+# win
 path_chrome = os.path.join(path_app, 'chrome-linux64', 'chrome')
 path_chromedriver = os.path.join(path_app, 'chromedriver-linux64', 'chromedriver')
+
+# linux
+# path_chrome = os.path.join(path_app, 'chrome-win64', 'chrome.exe')
+# path_chromedriver = os.path.join(path_app, 'chromedriver-win64', 'chromedriver.exe')
 
 service = Service(executable_path=path_chromedriver)
 options = webdriver.ChromeOptions()
