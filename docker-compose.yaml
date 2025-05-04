@@ -1,7 +1,14 @@
 version: '1.0'
 services:
   parcer:
-    image: "aboltys754/parcer:0.0.1"
+    image: "parcer:0.0.3"
     ports:
       - "8000:8000"
-    restart: on-failure
+    # command: ["sudo chown root:root /usr/local/bin/chromedriver", \
+    #           "sudo chmod +x /usr/local/bin/chromedriver", \
+    #           "sudo chown root:root /src/chrome", \
+    #           "sudo chmod +x /src/chrome"]
+  # selenium:
+  #   image: "selenium/standalone-chrome"
+  #   ports:
+  #     - "4444:4444"

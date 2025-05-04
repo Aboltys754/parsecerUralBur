@@ -7,8 +7,6 @@ Dockerfile
 __pycache__
 *venv
 
-*chrome-win64
-*chromedriver-win64
 *.build
 *.dist
 *README.md
